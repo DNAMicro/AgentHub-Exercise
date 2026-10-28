@@ -36,7 +36,9 @@ Then open **http://localhost:4440**. It has no dependencies and needs no API key
 
 [`Steps-classroom/README.md`](Steps-classroom/README.md) explains how each step runs: contracts first, then parallel subagents, then join and check. Each step file starts with its time. Its "Cost" line is about the app's own model calls, which the required checks never make.
 
-**Claude Code usage is what costs money.** In a trial run, Steps 0–3 used about $2 of Sonnet and Haiku together. The later steps are bigger.
+**Claude Code usage is what costs money.** In a full trial run of Steps 0–9c, Claude Code used about $27 of Sonnet and Haiku together and took about 2½ hours. Steps 0–2 cost under $1 together; Steps 5, 6 and 7a cost about $4 each.
+
+If you already run something on ports 4444 or 41241–41244, stop it before you start: the steps check the app on those ports.
 
 Follow one edition. The classroom edition is the one to build with. The original `Steps/` files describe the same app in a different order and are not meant to be mixed with it.
 
