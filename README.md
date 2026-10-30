@@ -8,9 +8,9 @@ This repository has **no app code**. It holds what you need to build the app:
 
 | Folder | What it is |
 | --- | --- |
-| [`Steps-classroom/`](Steps-classroom/README.md) | **The prompts to follow.** Steps 0–9c, written for class: a Sonnet lead session plus cheap Haiku subagents working in parallel. |
-| [`Steps/`](Steps/README.md) | The original build record: Steps 1–9 in the long form they were first written in. Read it to see how each step came about. |
-| [`companion-site/`](companion-site/README.md) | A teaching site that explains each step: what it changes, why, and how it works, on one evolving architecture diagram. |
+| [`Steps-classroom/`](Steps-classroom/README.md) | **The prompts to follow.** Steps 0–11, written for class: a Sonnet lead session plus cheap Haiku subagents working in parallel. |
+| [`Steps/`](Steps/README.md) | The original build record: Steps 1–11 in the long form they were first written in. Read it to see how each step came about. |
+| [`companion-site/`](companion-site/README.md) | A teaching site that explains each step: what it changes, why, and how it works, on one evolving architecture diagram. It covers Steps 0–9c so far. |
 
 ## Before you start
 
@@ -31,12 +31,12 @@ Then open **http://localhost:4440**. It has no dependencies and needs no API key
 
 1. Open Claude Code in **this folder** (the repository root). Build here, not in a subfolder.
 2. Paste the whole of [`Steps-classroom/00-setup-and-contracts.md`](Steps-classroom/00-setup-and-contracts.md) as your message. Claude sets up the project and commits `Step 0`.
-3. Then paste `01-…`, `02-…`, and so on up to `09c-…`, **one step at a time and in order**. Each step ends when its **Done when** checks pass and Claude has committed `Step N: …`.
+3. Then paste `01-…`, `02-…`, and so on up to `11-…`, **one step at a time and in order**. Each step ends when its **Done when** checks pass and Claude has committed `Step N: …`.
 4. Between steps, look at what was built: run it, read the code, and compare it with that step's pages on the teaching site.
 
 [`Steps-classroom/README.md`](Steps-classroom/README.md) explains how each step runs: contracts first, then parallel subagents, then join and check. Each step file starts with its time. Its "Cost" line is about the app's own model calls, which the required checks never make.
 
-**Claude Code usage is what costs money.** In a full trial run of Steps 0–9c, Claude Code used about $27 of Sonnet and Haiku together and took about 2½ hours. Steps 0–2 cost under $1 together; Steps 5, 6 and 7a cost about $4 each.
+**Claude Code usage is what costs money.** In a full trial run of Steps 0–9c, Claude Code used about $27 of Sonnet and Haiku together and took about 2½ hours. Steps 0–2 cost under $1 together; Steps 5, 6 and 7a cost about $4 each. Steps 10 and 11 were added after that trial and are not in those numbers.
 
 If you already run something on ports 4444 or 41241–41244, stop it before you start: the steps check the app on those ports.
 
