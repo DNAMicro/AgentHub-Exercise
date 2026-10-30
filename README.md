@@ -10,7 +10,7 @@ This repository has **no app code**. It holds what you need to build the app:
 | --- | --- |
 | [`Steps-classroom/`](Steps-classroom/README.md) | **The prompts to follow.** Steps 0–11, written for class: a Sonnet lead session plus cheap Haiku subagents working in parallel. |
 | [`Steps/`](Steps/README.md) | The original build record: Steps 1–11 in the long form they were first written in. Read it to see how each step came about. |
-| [`companion-site/`](companion-site/README.md) | A teaching site that explains each step: what it changes, why, and how it works, on one evolving architecture diagram. It covers Steps 0–9c so far. |
+| [`companion-site/`](companion-site/README.md) | A teaching site that explains each step: what it changes, why, and how it works, on one evolving architecture diagram. |
 
 ## Before you start
 

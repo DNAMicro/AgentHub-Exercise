@@ -1,6 +1,6 @@
 # AgentHub, step by step — companion site
 
-A standalone teaching site that explains how the AgentHub app was built in Steps 1–9: what each step changed and why, and how it works, on one architecture diagram that evolves from step to step. The site was made from the original project, AgentHub-POC, so it says that name in places. The finished code is not in this repository: you build it yourself with the step prompts.
+A standalone teaching site that explains how the AgentHub app was built in Steps 1–11: what each step changed and why, and how it works, on one architecture diagram that evolves from step to step. The site was made from the original project, AgentHub-POC, so it says that name in places. The finished code is not in this repository: you build it yourself with the step prompts.
 
 ## Start it
 
@@ -12,9 +12,9 @@ Open **http://localhost:4440**. The site binds to 127.0.0.1 only. If port 4440 i
 
 ## What is in it
 
-- **19 pages:** an introduction, then for each step **A** (what changed and why) and **B** (how to build it and how it works). The recap is in Step 9.
+- **23 pages:** an introduction, then for each step **A** (what changed and why) and **B** (how to build it and how it works). The recap is in Step 11.
 - **One architecture diagram** (`public/js/diagram.js`). Every component and connection has a fixed position, name and colour. Each step is an absolute snapshot (`ARCH` in `public/js/content.js`). The site computes what was added and removed and marks it with a tag, a border style and a colour: **+ NEW**, **~ CHANGED**, **✕ REMOVED**. Connections are labelled with what they carry. Line style shows the kind: A2A (solid), HTTP, SSE (dotted), HTTPS model call (dashed), file (dash-dot).
-- **Comparison (page A):** *Previous step / This step / Animate the change*. Step 9 also offers *Step 1 → Step 9*.
+- **Comparison (page A):** *Previous step / This step / Animate the change*. The last step also offers *Step 1 → Step 11*.
 - **Walkthrough (page B):** one concrete user action, hop by hop. It has Play, Pause, Replay, Prev and Next event controls and a caption per event. The numbered list beside it is the same walkthrough without motion. It is labelled **Simulated**: nothing is sent to any agent or model.
 - **Screenshots:** real screenshots of the running app, taken on a separate test stack with fictional data. They show today's UI, and each caption says which step's idea it illustrates.
 - **Keys:** ← → (PageUp / PageDown) change pages, Home / End jump, F starts presentation mode (full screen, no top navigation) and Esc leaves it. Swipe works on touch screens.
